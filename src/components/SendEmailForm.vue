@@ -2,7 +2,7 @@
   <transition name="fade">
     <div class="flex justify-center items-center min-h-screen" v-show="open">
       <div class="absolute inset-0 bg-black opacity-25"></div>
-      <div class="w-1/2 border px-8 pt-16 pb-8 rounded-lg bg-white z-10">
+      <div class="max-w-sm border px-8 pt-16 pb-8 rounded-lg bg-white z-10">
         <div class="text-gray-700" v-text="title"></div>
         <form class="mt-8" @submit.prevent="submitHandle">
           <label class="block flex items-center">
