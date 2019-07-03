@@ -2,14 +2,14 @@
   <transition name="fade">
     <div class="flex justify-center items-center min-h-screen" v-show="open">
       <div class="absolute inset-0 bg-black opacity-25"></div>
-      <div class="max-w-sm border px-8 pt-16 pb-8 rounded-lg bg-white z-10">
+      <div class="max-w-sm border px-8 pt-10 pb-8 rounded-lg bg-white z-10">
         <div class="text-gray-700" v-text="title"></div>
-        <form class="mt-8" @submit.prevent="submitHandle">
+        <form class="mt-16" @submit.prevent="submitHandle">
           <label class="block flex items-center">
             <span class="text-gray-700 font-bold">邮箱地址：</span>
             <input v-model="form.email" class="form-input block ml-2 flex-1" placeholder="请输入您的接收邮箱">
           </label>
-          <div class="border-t border-gray-200 pt-6 mt-12 flex items-center justify-between">
+          <div class="pt-6 mt-12 flex items-center justify-between">
             <button type="button"
                     @click="open = false"
                     class="px-4 py-1 border border-gray-400 rounded text-gray-700 hover:bg-gray-200 focus:outline-none">
